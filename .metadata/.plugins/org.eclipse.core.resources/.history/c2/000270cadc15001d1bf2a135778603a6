@@ -1,0 +1,50 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class Deck {
+
+	// instance fields
+	// Using our card class, we instantiate 52 unique cards as a list to create our playing deck 
+	ArrayList<Card> cards = new ArrayList<Card>();
+	List<Integer> value = Arrays.asList(2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14);
+	List<String> suit = Arrays.asList("Club", "Diamond", "Heart", "Spades");
+	// ArrayList<card> = new ArrayList<card>;
+	
+	public void makeCardDeck() {
+		for (String s : suit) {
+			for (int v : value) {
+				cards.add(new Card(v, s));
+			}
+		}
+	}
+	
+	public int sizeOf() {
+		return cards.size();
+	}
+	
+//	public void printDeck() {
+//		for (int i = 0; i < cards.size(); i++) {
+//			System.out.format("The card suit is %s, the rank is %d%n", );
+//		}
+//	}
+	
+	//public void shuffle() {
+	//	Collections.shuffle();
+	//}
+
+	
+	
+	
+	
+	
+	// Methods of the Deck class
+	
+	
+		
+}
+
+	
+
+

@@ -1,0 +1,58 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Player {
+
+	private int score;
+	private String name;
+	
+	// Constructor
+	public Player () {}
+	
+	
+	
+	// Methods of the Player class
+	public List<Card> makePlayersHand(Deck deck) {
+		List<Card> playerHand = new ArrayList<Card>();
+		for (int i = 0; i < 26; i++) {
+			Card card = deck.draw();
+			playerHand.add(card);
+		}
+		return playerHand;
+	}
+	
+	public void describe () {
+		for (int i = 0; i < 26; i++) {
+			
+			
+			
+			
+			System.out.println();
+		}
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}	
+	
+	public int getScore() {
+		return score;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+
+
+
+
+	
+	
+	
+	
+	
+}

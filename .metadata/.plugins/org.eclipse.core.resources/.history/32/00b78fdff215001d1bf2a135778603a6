@@ -1,0 +1,30 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Player {
+
+	int score;
+	String name;
+	
+	// Constructor
+	public Player () {}
+	
+	
+	
+	// Method
+	public List<Card> makePlayersHand(Deck deck) {
+		List<Card> playerHand = new ArrayList<Card>();
+		for (int i = 0; i < 26; i++) {
+			Card card = deck.get(i);
+			playerHand.add(card);
+		}
+		return playerHand;
+	}
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,58 @@
+
+public class Card {
+
+	// instance fields
+	
+	private int suit; // a value representing the four card suits: clubs, diamonds, hearts, and spades (lowest to highest)
+	private int value; // contains a value from 2-14 representing cards 2-Ace
+	private String name; // reference describing the value and name of a specific card
+	
+	
+	// Constructor(s)
+	public Card() {}
+	
+	public Card(int suit, int value, String name) {
+		this.suit = suit;
+		this.value = value;
+		this.name = name;
+	}
+	
+	
+	// Methods of the Card class
+	// The describe() prints out a description of a card
+	public void describe() {
+		System.out.println("Card suit : " + suit);
+		System.out.println("Card value : " + value);
+		System.out.println("Card name : " + name);
+	}
+	
+	// Getters and Setters
+	public void setSuit(int suit) {
+		this.suit = suit;
+	}
+	
+	public int getSuit() {
+		return suit;
+	}
+	
+	public void setValue(int value) {
+		this.value = value;
+	}
+	
+	public int getValue() {
+		return value;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+
+
+}
+
+

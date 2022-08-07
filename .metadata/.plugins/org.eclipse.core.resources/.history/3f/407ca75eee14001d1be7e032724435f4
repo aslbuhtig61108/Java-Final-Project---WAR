@@ -1,0 +1,10 @@
+
+public class Card {
+
+	// instance fields
+	int suit; // a value representing the four card suits: clubs, hearts, diamonds, and spades (lowest to highest)
+	int value; // contains a value from 2-14 representing cards 2-Ace
+	String name; // reference describing the value and name of a specific card
+	
+	
+}

@@ -1,0 +1,62 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Player {
+
+	private String name;
+	private int score;
+	private List<Card> playerHand;
+	
+	// Constructor
+	public Player () {}
+	
+	public Player (String name) {
+		this.name = name;
+		score = 0; // score is set to 0 
+	}
+	
+	
+	// Methods of the Player class
+	public void makePlayersHand(Deck deck) {
+		List<Card> playerHand = new ArrayList<Card>();
+		for (int i = 0; i < 26; i++) {
+			Card card = deck.draw();
+			playerHand.add(card);
+			deck.remove(card);
+		}
+		this.playerHand = playerHand;
+	}
+	
+	public void describe () {
+		for (int i = 0; i < 26; i++) {
+			int currentCardValueHand = this.playerHand.get(i).getValue();
+			String currentCardSuitHand = this.playerHand.get(i).getSuit();
+			System.out.println("This is a " + currentCardValueHand + " of " + currentCardSuitHand);
+		}
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}	
+	
+	public int getScore() {
+		return score;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+
+
+
+
+	
+	
+	
+	
+	
+}
