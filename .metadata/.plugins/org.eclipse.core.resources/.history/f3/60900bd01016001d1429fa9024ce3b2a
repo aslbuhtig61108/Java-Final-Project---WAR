@@ -12,9 +12,9 @@ public class Player {
 	public Player () {}
 	
 	// This constructor creates a player for the first time
-	public Player (String name, int score) {
+	public Player (String name) {
 		this.name = name;
-		this.score = 0; // score is set to 0 
+		score = 0; // score is set to 0 
 	}
 	
 	

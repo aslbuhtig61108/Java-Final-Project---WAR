@@ -14,7 +14,7 @@ public class Player {
 	// This constructor creates a player for the first time
 	public Player (String name, int score) {
 		this.name = name;
-		this.score = 0; // score is set to 0 
+		score = 0; // score is set to 0 
 	}
 	
 	

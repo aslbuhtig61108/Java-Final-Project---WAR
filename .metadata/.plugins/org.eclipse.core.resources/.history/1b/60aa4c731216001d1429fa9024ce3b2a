@@ -59,7 +59,7 @@ public class App {
 	}
 	
 	
-	System.out.println("\n\n" + player1.getName() + " score : " + scoreP1);
+	System.out.println(player1.getName() + " score : " + scoreP1);
 	System.out.println(player2.getName() + " score : " + scoreP2);
 	}
 	

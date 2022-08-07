@@ -5,8 +5,6 @@ public class App {
 	public static void main(String[] args) {
 	// Scanner for player input
 	Scanner kb = new Scanner(System.in);
-	int scoreP1 = 0;
-	int scoreP2 = 0;
 	
 	// Create, instantiate, and shuffle the new deck before play begins
 	Deck deck = new Deck();
@@ -40,27 +38,23 @@ public class App {
 	System.out.println("Player 2's Hand:");
 	player2.describe();
 
-	for (int ctr = 0; ctr < 26; ctr++ ) {
-		System.out.println("\n\nPlayer 1 turn");
-		Card cardFlippedValueP1 = player1.flip();
-		player1.sizeOfPlayerHand();
-		System.out.println(cardFlippedValueP1.getValue() + " of " + cardFlippedValueP1.getSuit());
 	
-		System.out.println("\n\nPlayer 2 turn");
-		Card cardFlippedValueP2 = player2.flip();
-		player2.sizeOfPlayerHand();
-		System.out.println(cardFlippedValueP2.getValue() + " of " + cardFlippedValueP2.getSuit());
+	System.out.println("\n\nPlayer 1 turn");
+	Card cardFlippedValueP1 = player1.flip();
+	player1.sizeOfPlayerHand();
+	System.out.println(cardFlippedValueP1.getValue() + " of " + cardFlippedValueP1.getSuit());
 	
-		if (cardFlippedValueP1.getValue() > cardFlippedValueP2.getValue()) {
-			scoreP1 = player1.incrementScore();
-		} else {
-			scoreP2 =player2.incrementScore();
-		}
+	System.out.println("\n\nPlayer 2 turn");
+	Card cardFlippedValueP2 = player2.flip();
+	player2.sizeOfPlayerHand();
+	System.out.println(cardFlippedValueP2.getValue() + " of " + cardFlippedValueP2.getSuit());
+	
+	if (cardFlippedValueP1.getValue() > cardFlippedValueP2.getValue()) {
+		player1.incrementScore();
+	} else {
+		player2.incrementScore();
 	}
-	
-	
-	System.out.println("\n\n" + player1.getName() + " score : " + scoreP1);
-	System.out.println(player2.getName() + " score : " + scoreP2);
+		
 	}
 	
 }
