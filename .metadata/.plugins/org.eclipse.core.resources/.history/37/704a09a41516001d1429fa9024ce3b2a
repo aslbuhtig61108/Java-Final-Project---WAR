@@ -17,7 +17,8 @@ public class Card {
 	public Card(String suit, int value, String name) {
 		this.suit = suit;
 		this.value = value;
-		this.name = name;	
+		this.name = name;
+		
 	}
 	
 	// PUBLIC METHODS OF THE CARD CLASS

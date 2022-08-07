@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class App {
 
 	public static void main(String[] args) {
-	// I received an resource leak error on my scanner
-	// I remember in Week 6 meeting the discussion of a try-catch option
 	try (// Scanner for player input
 	Scanner kb = new Scanner(System.in)) {
 		int scoreP1 = 0; // score for player1 to capture from a player's incrementScore() LINE65

@@ -21,7 +21,7 @@ public class Player {
 	// This method uses the parameter from the player constructor
 	// and greets the player to a game of WAR
 	public void welcomePlayer() {
-		System.out.println("Welcome to a WAR of SHUFFLED CARDS, " + this.name + "!!!\n");
+		System.out.println("Welcome to WAR, " + this.name + "!!!\n");
 	}
 	
 	// This method creates a player's hands consisting of 26 cards from a shuffled deck of 52 cards
